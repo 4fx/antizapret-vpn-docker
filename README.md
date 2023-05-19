@@ -13,9 +13,9 @@ Docker image converted from original LXD image.
 
 1. Copy this repository, build container, and run it.
     ```shell
-    git clone https://github.com/xtrime-ru/antizapret-vpn-docker.git antizapret
+    git clone https://github.com/4fx/antizapret-vpn-docker.git antizapret
     cd antizapret
-    docker-compose up -d --build
+    docker-compose up -d
     ```
 2. Download configuration file for your openvpn client from `client_keys` folder. 
 There will be udp and tcp versions of the config. For better performance use upd.
@@ -36,3 +36,4 @@ docker-compose up -d
 ## Links
 - Link to original project website: https://antizapret.prostovpn.org
 - Repository: https://bitbucket.org/anticensority/antizapret-vpn-container/src/master/
+- Original docker repository: https://github.com/xtrime-ru/antizapret-vpn-docker

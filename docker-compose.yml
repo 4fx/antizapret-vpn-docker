@@ -1,8 +1,7 @@
 version: '2.4'
 services:
   antizapret-vpn:
-    #image: xtrime/antizapret-vpn:latest
-    build: ./
+    image: ghcr.io/4fx/antizapret-vpn-docker:latest
     container_name: antizapret-vpn
     restart: unless-stopped
     ports:
