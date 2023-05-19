@@ -10,5 +10,10 @@ then
     rm -rf EasyRSA-3.1.0/
 fi
 
+echo "nameserver 1.1.1.1" >> /etc/resolv.conf
+echo "nameserver 1.0.0.1" >> /etc/resolv.conf
+echo "nameserver 9.9.9.9" >> /etc/resolv.conf
+echo "nameserver 149.112.112.112" >> /etc/resolv.conf
+
 /root/easy-rsa-ipsec/generate.sh \
 && exec /usr/sbin/init
