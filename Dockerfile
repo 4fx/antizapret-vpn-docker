@@ -13,6 +13,10 @@ RUN wget https://secure.nic.cz/files/knot-resolver/knot-resolver-release.deb --n
     && chmod 1777 /tmp \
     && apt update -y \
     && apt upgrade -y -o Dpkg::Options::="--force-confold" \
+    && wget https://ntc.party/uploads/short-url/qcZkhfK3hMdQtOGLD64orMd810D.patch -O /root/dnsmap/p.patch \
+    && apt -y remove python3-dnslib \
+    && apt -y install python3-pip \
+    && patch --directory /root/dnsmap -i /root/dnsmap/p.patch \
     && apt autoremove -y && apt clean
 
 COPY ./init.sh /
