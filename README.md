@@ -15,6 +15,7 @@ Docker image converted from original LXD image.
     ```shell
     git clone https://github.com/4fx/antizapret-vpn-docker.git antizapret
     cd antizapret
+    chmod 755 init.sh parse.sh
     docker-compose up -d
     ```
 2. Download configuration file for your openvpn client from `client_keys` folder. 

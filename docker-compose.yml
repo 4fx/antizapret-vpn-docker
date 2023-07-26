@@ -14,6 +14,8 @@ services:
       - ./getzones.awk:/root/antizapret/scripts/getzones.awk
       # Some domains blocked unofficially: https://ntc.party/t/vpn/129/127
       - ./include-hosts-custom.txt:/root/antizapret/config/include-hosts-custom.txt
+      # https://ntc.party/t/vpn/129/608
+      - ./parse.sh:/root/antizapret/parse.sh
     privileged: true
     logging:
       driver: "json-file"
